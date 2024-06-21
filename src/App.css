@@ -1,0 +1,93 @@
+/* Common styles for portfolio */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+}
+
+/* Main container */
+.App {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 20px; /* Adjust padding for smaller screens */
+  background-color: #fff;
+  box-shadow: 0px 0px 10px #0f2945;
+  border-radius: 8px;
+}
+
+/* Header styles */
+.App-header {
+  background-color: #0f2945;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .App {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+/* Profile image styling */
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #0f2945;
+  margin-bottom: 20px;
+}
+
+/* Circular photo styling */
+.Photo1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px; /* Adjust size as needed */
+  height: 250px; /* Adjust size as needed */
+  border-radius: 50%; /* Makes the image circular */
+  overflow: hidden; /* Ensures the image stays within the circular border */
+  border: 5px solid rgb(80, 82, 118); /* White border around the circular image */
+}
+
+.Photo1 img {
+  width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Content section styles */
+.content {
+  padding: 20px;
+}
+
+.about, .projects, .skills, .contact, .education {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+h2 {
+  color: #0f2945;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+a {
+  color: #0f2945;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
